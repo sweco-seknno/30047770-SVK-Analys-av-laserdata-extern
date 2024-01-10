@@ -1,3 +1,6 @@
+
+# Funktioner som används av SKB.ipynb
+ 
 import os
 import arcpy
 arcpy.CheckOutExtension('3D')

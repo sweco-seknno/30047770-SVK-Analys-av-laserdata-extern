@@ -1,4 +1,6 @@
-Scripts for quality control of delivered point cloulds (las), ortho photos etc
+Skript för kvalitetskontroll
+
+TODO: Lägg in skript för täthetskontroll från Karins OneDrive
 
 Ideas:
 

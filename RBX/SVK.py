@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+# TODO: kolla vilka skript/notebooks som använder dessa funktioner. 
+# Se även över SKB.py i samma veva - lägg alla funktioner i samma fil?
+
 """
 Created on Fri Aug 27 16:13:35 2021
 
@@ -56,20 +59,3 @@ def replace_line_in_file(infile, newfile, oldLine, newLine):
             else:
                 output_file.write(line)
 
-
-#def LG_str(LG):
-#    # Returns string LGXXX based on LG number (integer)
-#    return(f'LG{str(LG).zfill(3)}')
-#
-#def get_LG_line_dict(LG_line_voltage_file, LG_col, line_col):
-#    from pandas import read_csv
-#    df = read_csv(LG_line_voltage_file, sep="\t", header=0)
-#    LG_lines = df.groupby(LG_col).agg({line_col : lambda x: x.tolist()})[line_col].to_dict()
-#    return(LG_lines)
-#
-#
-#def get_LG_voltage_dict(LG_line_voltage_file, LG_col, voltage_col):
-#    from pandas import read_csv
-#    df = read_csv(LG_line_voltage_file, sep="\t", header=0)
-#    LG_voltages = df.groupby(LG_col).agg({voltage_col : lambda x: x.tolist()})[voltage_col].to_dict()
-#    return(LG_voltages)

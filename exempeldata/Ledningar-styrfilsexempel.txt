@@ -1,0 +1,20 @@
+LG	line	Littera	Namn	Strömtyp	Spänning	LG_kod	Status
+LG025	1	AL3 S8	Avgr till Åsele	10	220	250	Befintlig
+LG025	2	AL3 S5	Avgr Åsele-Stenkullafors	10	220	250	Befintlig
+LG025	3	AL3 S3	Gulsele-Hällby	10	220	250	Befintlig
+LG025	4	AL3 S4	Hällby-Avgr Åsele	10	220	250	Befintlig
+LG046	1	RL8 S3	Avgr Järkvissle-Hällsjö	10	220	460	Befintlig
+LG046	2	RL8 S9	Avgr till Järkvissle	10	220	460	Befintlig
+LG046	3	RL8 S7	Hällsjö-Söderala	10	220	460	Befintlig
+LG046	4	RL8 S2	Hölleforsen-Avgr Järkvissle	10	220	460	Befintlig
+LG046	5	CL3 S2	Nysäter-Vittersjö	10	400	460	Befintlig
+LG046	6	RL56	Stadsforsen-Hällsjö	10	220	460	Befintlig
+LG046	7	RL8 S1	Stadsforsen-Hölleforsen	10	220	460	Befintlig
+LG046	8	RL2 S1	Stadsforsen-Torpshammar	10	220	460	Befintlig
+LG058	1	CL5 S1-2	Hjälta-Vittersjö	10	400	580	Befintlig
+LG071	1	CL44 S5-7	Bäsna-Hallsberg	10	400	710	Befintlig
+LG071	2	CL44 S9	Bäsna-Repbäcken	10	400	710	Befintlig
+LG071	3	CL4 S4	Djurmo-Bäsna	10	400	710	Befintlig
+LG071	4	CL22 S6	Djurmo-Lindbacka	10	400	0	Befintlig
+LG500	1	CL22 S6	Djurmo-Lindbacka	10	400	1420	Befintlig
+LG500	2	CL44 S5-7	Bäsna-Hallsberg	10	400	1420	Befintlig
