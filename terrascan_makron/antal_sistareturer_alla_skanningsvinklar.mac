@@ -1,0 +1,13 @@
+[TerraScan macro]
+Version=020.001
+Description=NrAnyLastReturnsAnyAngle_5by5m
+Author=Karin Nordkvist
+ByLine=0
+ByScanner=0
+SlaveCanRun=1
+AnotherComputerCanRun=1
+CanBeDistributed=1
+
+FnScanClassifyClass("1-6,9,11,13-17,64",200,0)
+FnScanClassifyEcho(200,201,13,0)
+FnScanExportLattice(".\antal_sistareturer_alla_skanningsvinklar\block\antal_sistareturer_#block.tif","201",4,"2",5.000,3.000,11,4,0,"0.0",3,1)

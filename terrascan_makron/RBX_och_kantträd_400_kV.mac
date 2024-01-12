@@ -1,0 +1,75 @@
+[TerraScan macro]
+Version=020.001
+Description=RBX 400 kV
+Author=Karin Nordkvist
+ByLine=0
+ByScanner=0
+NeedClasses=1
+SlaveCanRun=1
+AnotherComputerCanRun=1
+CanBeDistributed=1
+
+# Compute distance to ground (class 2) for all points:
+FnScanDistClass("Any","2")
+#
+# Exclude vegetation points very close to wire (likely noise):
+FnScanClassifyDanger("4-5",18,0,"1-2",1,0.60,0.60,2)
+#
+# Exclude vegetation points above the wires (likely noise):
+FnScanClassifyCtrline("3-5",200,1,0,0.00,2.00,-1,0.000,50.000,0,0.00,2.00,1,1,0,0,0,0,0,0)
+#
+# Exclude vegetation points very close to tower points (likely noise):
+FnScanClassifyCloseby("4-5","0-65535","0-255",18,3,1.000,0,0,1,"15",0,"0-65535",0,"0-255",0)
+#
+# Exclude isolated points (likely noise):
+FnScanClassifyIsolated("3-5",200,1,"3-5",1.50,0)
+#
+# Exclude medium vegetation with distance to ground less than 2 m:
+FnScanClassifyDistance("4",201,-1.000,2.000,0)
+#
+# Find vegetation points (class 4-5) within "urgent RBX distance" from wire (levels 1, 2):
+FnScanClassifyDanger("4-5",67,0,"1-2",1,2.70,2.00,2)
+# Find other points (class 1, 6, 17, 64) within "urgent RBX distance" from wire (levels 1, 2):
+FnScanClassifyDanger("1,6,17,64",202,0,"1-2",1,2.70,2.00,2)
+#
+# Write the urgent RBX points (class 67 and 202) to txt file
+FnScanOutput(".\RBX_akuta\block\RBX_#block.txt","67,202",27,0,3,"",0,0,1,"2")
+#
+# Find all points (class 4-5) within RBX distance from wire (levels 1, 2) and add them to the RBX class:
+FnScanClassifyDanger("4-5",67,0,"1-2",1,5.50,2.00,2)
+#
+# Write RBX points (class 67) to txt file:
+FnScanOutput(".\RBX\block\RBX_#block.txt","67",27,0,3,"",0,0,1,"2")
+#
+# Find other objects (class 1, 6, 17, 64) within RBX distance from wire (levels 1, 2):
+FnScanClassifyDanger("1,6,17,64",202,0,"1-2",1,5.50,2.00,2)
+#
+# Write these other objects (class 202) to txt file:
+FnScanOutput(".\höga_föremål\block\höga_föremål_#block.txt","202",27,0,3,"",0,0,1,"2")
+#
+# Put RBX points back into vegetation classes:
+FnScanClassifyClass("67",5,0)
+FnScanClassifyDistance("5",4,0.000,5.000,0)
+FnScanClassifyDistance("4",3,0.000,1.000,0)
+# Put previously exluded medium veg (201) back into medium veg class (4):
+FnScanClassifyClass("201",4,0)
+#
+# Group medium and high vegetation points according to tree logic
+FnScanAssignGroups("4-5",0,50,0,0,0.200,10.0,2.50,1,2.00,10,0.60,2.00,0,20,0.000)
+#
+# Classify points in tree groups as Tree:
+FnGrpClassifyBest(2,"4-5",0.200,1,16,6,0,9,0,65,0,0,0,0)
+#
+# Classify highest point in each tree group to tree top
+FnGrpClassifyOnePnt(2,"65",0,66,0)
+#
+# Classify danger tree tops as danger points
+FnScanClassifyDanger("66",67,0,"1-2",2,7.00,51.00,2)
+#
+# Write danger points (class 67) to txt file
+FnScanOutput(".\kantträd\block\kantträd_#block.txt","67",27,0,3,"",0,0,1,"2")
+#
+# Put trees, tree tops and danger points back into vegetation classes
+FnScanClassifyClass("65-67",5,0)
+FnScanClassifyDistance("5",4,0.000,5.000,0)
+FnScanClassifyDistance("4",3,0.000,1.000,0)

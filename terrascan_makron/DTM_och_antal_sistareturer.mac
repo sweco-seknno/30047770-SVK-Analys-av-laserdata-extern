@@ -1,0 +1,15 @@
+[TerraScan macro]
+Version=020.001
+Description=NrAnyLastReturns_5by5m
+Author=Karin Nordkvist
+ByLine=0
+ByScanner=0
+SlaveCanRun=1
+AnotherComputerCanRun=1
+CanBeDistributed=1
+
+FnScanExportLattice(".\DTM\block\DTM_#bemin_#bnmin_#bemax_#bnmax.tif","2,9",3,"2",1.000,10.000,14,1,0,"0",3,0)
+FnScanClassifyClass("1-6,9,11,13-17,64",200,0)
+FnScanClassifyEcho(200,201,13,0)
+FnScanClassifyAngle("201",202,0,20.00,99.99,0)
+FnScanExportLattice(".\antal_sistareturer\block\antal_sistareturer_#block.tif","201",4,"2",5.000,3.000,11,4,0,"0.0",3,1)
