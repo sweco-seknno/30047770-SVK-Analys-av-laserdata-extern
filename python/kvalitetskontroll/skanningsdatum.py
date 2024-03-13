@@ -1,10 +1,10 @@
-# %%
+# %% IMPORTERA PAKET
 from pathlib import Path
 import pylas
 import pandas as pd
 import datetime
 
-# %%
+# %% VARIABLER OCH SÖKVÄGAR
 prj_dir = Path(r"C:\SVK_2023\skanningsdatum")
 LG= ['LG011', 'LG011', 'LG012', 'LG012', 'LG012', 
 	 'LG019', 'LG019', 'LG019', 'LG019', 'LG019', 
@@ -26,7 +26,7 @@ LG= ['LG011', 'LG011', 'LG012', 'LG012', 'LG012',
 	 'LG133', 'LG135', 'LG135', 'LG141', 'LG141', 
 	 'LG141', 'LG142', 'LG700', 'LG700']
 
-skanningsdatum_fil = prj_dir / "skanningsdatum_2023-12-07_2.txt"
+skanningsdatum_fil = prj_dir / "skanningsdatum_alla.txt"
 
 data_dir = Path(r"\\sellanas001.sweco.se\26664 Mätdata\Data_SVK\SVK_2023")
 laslista_fil = prj_dir / "tile_mitt_på_ledningen.txt"
@@ -34,12 +34,12 @@ laslista_fil = prj_dir / "tile_mitt_på_ledningen.txt"
 filtyper = [".las", ".laz"]
 epoch_start = datetime.datetime(1980, 1, 6)
 
-# %%
+# %% LÄS IN DATA
 laslista_alla = pd.read_csv(laslista_fil, sep="\t", names=["PageName", "LG_value", "line"])
 laslista = laslista_alla[laslista_alla['LG_value'].isin(LG)]
 resultat_data = []
 
-# %%
+# %% FUNKTIONER
 def hitta_fil(mapp_path, filnamn, filtyper):
     # Loopa igenom alla filer i mappen och dess undermappar
     for fil_path in mapp_path.rglob('*'):
@@ -47,7 +47,7 @@ def hitta_fil(mapp_path, filnamn, filtyper):
             # Om filen matchar både namnet och en av de angivna ändelserna, skriv ut sökvägen
             return(fil_path)
 
-# %%
+# %% HUVUDLOOP
 for index, row in laslista.iterrows():
     PageName = row["PageName"]
     LG_value = row["LG_value"]
