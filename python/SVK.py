@@ -16,7 +16,6 @@ import os
 import glob
 
 
-
 def create_dir(*dirpaths):
     import os
     for dirpath in dirpaths:
