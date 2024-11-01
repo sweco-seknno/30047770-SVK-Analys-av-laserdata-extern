@@ -1,0 +1,393 @@
+Code	Name
+10	Ajaure-Avgr Gejmån
+20	Alvesta-Hemsjö
+30	Alvesta-Hurva
+40	Alvesta-Sege
+45	Anneberg-Danderyd
+50	Arrie-Kruseberg
+60	Avgr Arosverket-Finnslätten
+70	Avgr Bågede-Avgr Gäddede
+80	Avgr Degerforsen-Gulsele
+90	Avgr Edinge-Gråska
+100	Avgr Enafors-Nea
+110	Avgr Forsse-Forsmo
+120	Avgr Gejmån-Rössåga
+130	Avgr Gäddede-Junsternäs
+140	Avgr Havsnäs-Avgr Bågede
+150	Avgr Hofors-Finnslätten
+158	Avgr Håtuna-Överby
+160	Avgr Högåsen-Nea
+170	Avgr Järkvissle-Hällsjö
+180	Avgr Järnvägsforsen-Ånge
+190	Avgr Kattstrupeforsen-Mörsil
+200	Avgr Korsselbränna-Avgr Storbä
+210	Avgr Krylbo-Avesta
+220	Avgr Lindhov-Högdalen
+230	Avgr Långbjörn-Gulsele
+240	Avgr Moforsen-Forsmo
+250	Avgr Måby-Avgr Måby
+260	Avgr Måby-Överby
+270	Avgr Nämforsen-Avgr Moforsen
+280	Avgr Näverede-Midskog
+290	Avgr Olden-Stensjön
+300	Avgr Storbäck-Stalon
+310	Avgr Stugun-Avgr Näverede
+320	Avgr Torpshammar-Ljusdal
+330	Avgr Torpshammar-Vaple
+340	Avgr till Arosverket
+350	Avgr till Bågede
+360	Avgr till Degerforsen
+370	Avgr till Edinge
+380	Avgr till Enafors
+390	Avgr till Forsse
+400	Avgr till Gejmån
+410	Avgr till Gäddede
+420	Avgr till Havsnäs
+430	Avgr till Hofors
+438	Avgr till Håtuna
+440	Avgr till Högåsen
+450	Avgr till Junsterforsen
+460	Avgr till Järkvissle
+470	Avgr till Järnvägsforsen
+480	Avgr till Kattstrupeforsen
+490	Avgr till Korsselbränna
+500	Avgr till Krylbo
+510	Avgr till Lindhov
+520	Avgr till Moforsen
+530	Avgr till Måby
+540	Avgr till Nämforsen
+550	Avgr till Näverede
+560	Avgr till Olden
+570	Avgr till Storbäck
+580	Avgr till Stugun
+590	Avgr till Torpshammar
+600	Avgr till Åsele
+610	Avgr Åsele-Stenkullafors
+618	Barkeryd-Barkeryd
+620	Barkeryd-Nässjöbyn
+630	Barkeryd-Tenhult
+640	Barsebäck-Sege
+650	Beckomberga-Bredäng
+660	Betåsen-Djurmo
+670	Betåsen-Kilforsen
+680	Betåsen-Lasele
+690	Billdal-Vester Hassing
+700	Blaiken-Juktan
+710	Blåsjön-Linnvasselv
+720	Borgvik-Hasle
+730	Borgvik-Kilanda
+740	Borgvik-Skogssäter
+750	Botkyrka-Bredäng
+760	Breared-Söderåsen
+770	Bredäng-Älvsjö
+780	Bredåker-Avgr Måby
+790	Bredåker-Plenninge
+800	Bredåker-Överby
+810	Bräcke-Ljusdal
+820	Bäsna-Hallsberg
+830	Bäsna-Repbäcken
+839	Danderyd-Järva
+840	Danderyd-Lidingö
+850	Danderyd-Värtan
+860	Dannebo-Finnböle
+870	Dannebo-Fågelsundet
+880	Dannebo-Rauma Fenno-scan 1
+890	Dannebo-Rauma Fenno-scan 2
+900	Djupsjön-Avgr Olden
+910	Djupsjön-Juveln
+920	Djuptjärn-Keminmaa
+930	Djurmo-Bäsna
+940	Djurmo-Lindbacka
+950	Dönje-Ockelbo
+960	Ekbacken-Nacka
+965	Ekudden-Ekudden
+970	Ekudden-Bredäng
+980	Ekudden-Högdalen
+990	Ekudden-Skarpnäck
+1000	Okänt
+1010	Ekudden-Solberga
+1020	Finnböle-Dannebo
+1030	Finnböle-Hamra
+1040	Finnböle-Horndal
+1050	Fjäturen-Anneberg
+1060	Forsmark FT46-Forsmark FT47
+1070	Forsmark-Dannebo
+1075	Forsmo-Helgum
+1080	Forssjön-Avgr Krylbo
+1090	Fågelsundet-Björn
+1100	Gardikfors-Ajaure
+1110	Gasturbin-Stallbacka
+1120	Glan-Kimstad
+1130	Glan-Kolstad
+1140	Glan-Simpevarp
+1150	Grundfors-Blaiken
+1160	Grundfors-Gardikfors
+1170	Grundfors-Ramsele
+1180	Grundfors-Storfinnforsen
+1190	Gråska-Hallstavik
+1193	Grönviken-Stackbo
+1200	Gulsele-Hällby
+1210	Gustafs-Morgårdshammar
+1220	Hagby-Anneberg
+1230	Hagby-Avgr Måby
+1240	Hagby-Danderyd
+1250	Hagby-Fjäturen
+1255	Hagby-Hagby
+1260	Hagby-Järva
+1270	Hagby-Tuna
+1280	Hagby-Vallentuna
+1290	Hall-Ekudden
+1300	Hall-Hedenlunda
+1308	Hallsberg-Hallsberg
+1310	Hallsberg-Jönköping
+1320	Hallsberg-Kimstad
+1330	Hallsberg-Moholm
+1340	Hallsberg-Timmersdala
+1350	Hallsberg-Tälle
+1360	Hallsberg-Älberg
+1370	Hallsberg-Östansjö
+1380	Hammarforsen-Kilen
+1390	Hamra-Finnslätten
+1395	Hamra-Avgr Håtuna
+1400	Hamra-Hall
+1405	Hamra-Hamra
+1410	Hamra-Håtuna
+1420	Hamra-Odensala
+1430	Hamra-Åker
+1440	Hamra-Överby
+1450	Harsprånget-Letsi
+1460	Harsprånget-Ligga
+1470	Harsprånget-Porjus
+1480	Hedenlunda-Glan
+1486	Helgum-Stadsforsen
+1490	Hemsjö-Barsebäck
+1500	Hemsjö-Hurva
+1510	Hemsjö-Karlshamn
+1520	Himmeta-Avgr till Arosverket
+1528	Himmeta-Karlslund
+1530	Himmeta-Lindbacka
+1537	Hjälta-Helgum
+1538	Hjälta-Hjälta
+1540	Hjälta-Nysäter
+1550	Hjälta-Stöde
+1560	Hjälta-Vittersjö
+1570	Horndal-Avesta
+1580	Horndal-Finnslätten
+1590	Horndal-Forssjön
+1600	Horndal-Horndal
+1610	Horndal-Starfors
+1620	Horndal-Untra
+1630	Horndal-Västerås
+1640	Horred-Breared
+1650	Horred-Häradsbo
+1660	Horred-Ringhals
+1670	Horred-Söderåsen
+1680	Horred-Uddebo
+1690	Hurva-Barsebäck
+1700	Hurva-Sege
+1710	Hägerstalund-Beckomberga
+1720	Hällby-Avgr Åsele
+1730	Hällby-Trattberget
+1740	Hällsjö-Söderala
+1750	Hällsjö-Vaple
+1760	Häradsbo-Söderåsen
+1770	Håtuna-Beckomberga
+1780	Högdalen-Högdalen GT6
+1790	Högdalen-Skanstull
+1792	Högdalen-Skarpnäck
+1800	Högnäs-Stornorrfors
+1810	Hölleforsen-Avgr Järkvissle
+1820	Isovaara-Petäjäskoski
+1830	Junsternäs-Blåsjön
+1840	Järpströmmen-Avgr Enafors
+1850	Järpströmmen-Avgr Högåsen
+1860	Järpströmmen-Djupsjön
+1870	Järva-Beckomberga
+1880	Järva-Värtan
+1890	Jönköping-Hörby
+1900	Kalix-Ossauskoski
+1910	Karlshamn-Stärnö
+1915	Karlslund-Lindbacka
+1917	Karlslund-Östansjö
+1920	Katarina-Skanstull
+1930	Kilanda-Hisingen
+1940	Kilanda-Stenkullen
+1950	Kilen-Stadsforsen
+1960	Kilforsen-Hjälta
+1970	Kilforsen-Långbjörn
+1980	Kimstad-Ekhyddan
+1990	Kolbotten-Avgr Lindhov
+2000	Kolbotten-Botkyrka
+2010	Kolbotten-Hall
+2020	Kolstad-Barkeryd
+2030	Kolstad-Tenhult
+2040	Kristinelund-Görlöse
+2050	Kristinelund-Hovegaard
+2060	Kruseberg-Herrenwyk
+2070	Krångede-Avgr Stugun
+2080	Krångede-Bräcke
+2090	Krångede-Gammelänge
+2100	Krångede-Hammarforsen
+2110	Krångede-Horndal
+2120	Krångede-Ljusdal
+2130	Kättbo-Borgvik
+2140	Laforsen-Avgr Hofors
+2150	Lasele-Avgr Långbjörn
+2160	Lasele-Avgr Nämforsen
+2170	Letsi-Betåsen
+2180	Letsi-Isovaara
+2183	Letsi-Trolltjärn
+2190	Lidingö-Värmdö
+2200	Ligga-Messaure
+2210	Ligga-Vargfors
+2220	Lindbacka-Hallsberg
+2228	Lindbacka-Östansjö
+2230	Lindome
+2240	Lindome-Billdal
+2250	Lindome-Torred
+2260	Lindstad-Hurva
+2270	Ljusdal-Dönje
+2280	Loviseholm-Halden
+2290	Långbjörn-Avgr Degerforsen
+2300	Långbjörn-Avgr Havsnäs
+2310	Långbjörn-Avgr Korsselbränna
+2320	Långbjörn-Avgr Långbjörn
+2330	Malevik-Nordre skogsskär
+2340	Malsta-Gråska
+2350	Messaure-Letsi
+2360	Messaure-Svartbyn
+2370	Midskog-Avgr Kattstrupeforsen
+2380	Midskog-Gustafs
+2390	Midskog-Järpströmmen
+2400	Midskog-Kättbo
+2403	Midskog-Midskog
+2404	Midskog Kraftverk-Midskog
+2410	Midskog-Rätan
+2420	Moliden-Hjälta
+2425	Morgårdshammar-Karlslund
+2430	Morgårdshammar-Lindbacka
+2440	Mörsil-Järpströmmen
+2450	Mörsil-Sällsjö
+2460	Mörttjärnsberget-Bräcke
+2470	Nacka-Skarpnäck
+2480	Nordbalt
+2482	Norrtjärn-Hjälta
+2485	Norrtjärn-Hjälta
+2490	Nybro-Hemsjö
+2500	Nysäter-Bandsjö
+2510	Nysäter-Vittersjö
+2520	Nässjö-Värnamo
+2530	Nässjöbyn-Lindstad
+2540	Ockelbo-Horndal
+2550	Odensala-Forsmark
+2560	Odensala-Hagby
+2570	Odensala-Kolbotten
+2575	Olingan-Tandö
+2580	Plenninge-Avgr Måby
+2590	Plenninge-Boländerna
+2600	Porjus-Grundfors
+2610	Porjus-Vietas
+2611	Porjusberget-Vietas
+2615	Porjusberget-Porjus
+2620	Ramsele-Kilforsen
+2630	Ramsele-Midskog
+2640	Ringhals-Strömma
+2650	Ritsem-Ofoten
+2657	Rätan-Olingan
+2660	Rätan CT269-Rätan RT52
+2661	Rätan-Rätan
+2670	Rätan-Sveg
+2680	Rätan-Tandö
+2690	Rätan-Trångfors
+2700	Rätan-Turinge
+2710	Råbäcken-Högnäs
+2720	Råbäcken-Stornorrfors
+2730	Sege-Arrie
+2740	Seitevare-Ligga
+2750	Simpevarp-Alvesta
+2760	Simpevarp-Nybro
+2770	Skanstull-Mårtensdal
+2780	Skarpnäck-Högdalen
+2790	Skarpnäck-Nacka
+2800	Skogssäter-Halden
+2810	Skogssäter-Kilanda
+2820	Skogssäter-Loviseholm
+2823	Skogssäter-Skogssäter
+2830	Stackbo-Finnböle
+2840	Stackbo-Forsmark
+2850	Stackbo-Hamra
+2860	Stackbo-Valbo
+2870	Stackbo-Ängsberg
+2880	Stadsforsen-Avgr Forsse
+2886	Stadsforsen-Forsse
+2890	Stadsforsen-Hjälta
+2900	Stadsforsen-Hällsjö
+2910	Stadsforsen-Hölleforsen
+2920	Stadsforsen-Torpshammar
+2930	Stadsforsen-Ånge
+2940	Starfors-Hamra
+2950	Stenkullen-Horred
+2960	Stenkullen-Lindome
+2970	Stenkullen-Strömma
+2980	Storfinnforsen-Djurmo
+2990	Storfinnforsen-Midskog
+3000	Storfinnforsen-Ramsele
+3005	Storfinnforsen-Torpberget
+3010	Stornorrfors-Hjälta
+3020	Stornorrfors-Moliden
+3030	Strömma-Horred
+3040	Strömma-Lindome
+3050	Stärnö-Slupsk
+3058	Stöde-Grönviken
+3060	Stöde-Stackbo
+3070	Svartbyn-Djuptjärn
+3080	Svartbyn-Keminmaa
+3090	Svartbyn-Råbäcken
+3100	Svarthålsforsen-Kilen
+3110	Söderala-Valbo
+3120	Söderåsen-Barsebäck
+3130	Söderåsen-Kristinelund
+3140	Tandö-Borgvik
+3150	Tegnerberget-Katarina
+3160	Tegnerberget-Tegner
+3170	Tenhult-Alvesta
+3180	Timmersdala-Stenkullen
+3183	Torpberget-Djurmo
+3185	Torred-Malevik
+3190	Trångfors-Långå
+3195	Trolltjärn-Betåsen
+3200	Tuggen-Hjälta
+3202	Tuggen-Norrtjärn
+3210	Tuna-Avgr Edinge
+3220	Tuna-Bredåker
+3230	Tuna-Forsmark
+3240	Tuna-Malsta
+3245	Tuna-Tuna
+3250	Turinge-Avgr Järnvägsforsen
+3260	Tälle-Lindbacka
+3270	Tälle-Nässjö
+3280	Uddebo-Tenhult
+3290	Untra-Bredåker
+3298	Tuggen-Norrtjärn
+3300	Valbo-Untra
+3310	Vallentuna-Malsta
+3320	Vanadislunden-Tegnerberget
+3330	Vargfors-Tuggen
+3340	Vietas-Ritsem
+3350	Vittersjö-Hamra
+3360	Vittersjö-Stackbo
+3370	Vittersjö-Ängsberg
+3380	Värtan-Gärdet
+3390	Värtan-Koltorp
+3400	Värtan-Ropsten
+3410	Värtan-Vanadislunden
+3420	Västerås-Bysingsberg
+3430	Älvsjö-Skanstull
+3440	Ängsberg-Finnböle
+3450	Åker-Hedenlunda
+3460	Ånge-Avgr Torpshammar
+3470	Ånge-Laforsen
+3480	Östansjö-Barkeryd
+3490	Överby-Beckomberga
+3500	Överby-Hägerstalund
+3510	Kimstad
