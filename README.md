@@ -1,2 +1,5 @@
 # 30047770-SVK-Analys-av-laserdata
-Skript för vidareförädling och sammanställning av vegetationsanalys av punktmoln från SVK:s ledningar.
+- Manualer för arbetet i TerraScan
+- TerraScan-makron för identifiering av kantträd och vegetation i ledningsgatan
+- Python-skript för vidareförädling och sammanställning av kantträd och vegetation i ledningsgatan inför leverans 
+  till SVK-Analys-av-laserdata
