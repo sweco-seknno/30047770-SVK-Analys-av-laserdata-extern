@@ -10,12 +10,12 @@ import pandas as pd
 import shutil
 
 #%% VARIABLER
-LGs_info = "Ledningar_2023.txt"
+LGs_info = "Ledningar_2024_nya_makron_241112.txt"
 
-analysis_dir = Path(r"U:\Projekt\Analys_2023")
-data_dir = Path(r"U:\Projekt\Data_2023")
+analysis_dir = Path(r"Q:\Projekt\Analys_2024")
+data_dir = Path(r"Q:\Projekt\Data_2024")
 bigdata_dir = Path(r"C:\SVK_2023")
-ptc_file = r"\\Seumefs002\projekt\26664\30047770\000\Projekt\Analys_2023\pointclasses.ptc"
+ptc_file = r"Q:\Projekt\Analys_2024\pointclasses.ptc"
 macro_dir = analysis_dir / "terrascan_makron"
 shellscript_dir = analysis_dir / "shellscript"
 dgn_dir = analysis_dir / "DGN"
@@ -29,11 +29,11 @@ def create_line_files(row):
     
     line_dir = analysis_dir / "ledningar" / LG / f"line_{line}"
         
-    create_prj_file(line_dir, LG, line)
+    # create_prj_file(line_dir, LG, line)
     copy_RBX_och_kantträd_macro(line_dir, spanning)
-    copy_DGN(dgn_dir, LG, line)
-    copy_pointdensity_DTM_macro(macro_dir, line_dir)
-    copy_sammanfoga_RBX(shellscript_dir, line_dir)
+    # copy_DGN(dgn_dir, LG, line)
+    # copy_pointdensity_DTM_macro(macro_dir, line_dir)
+    # copy_sammanfoga_RBX(shellscript_dir, line_dir)
     
 def copy_file(src, dest):
     try:
@@ -71,10 +71,8 @@ def copy_pointdensity_DTM_macro(macro_dir, line_dir):
 def copy_sammanfoga_RBX(shellscript_dir, line_dir):
     src = shellscript_dir / "sammanfoga_RBX-block.bat"
     dest = line_dir / "RBX" / "sammanfoga_RBX-block.bat"
-    print(str(src))
-    print(str(dest))
-    #copy_file(src, dest)
-    #print("Kopierat sammanfoga RBX")
+    copy_file(src, dest)
+    print("Kopierat sammanfoga RBX")
 
 
 #%% KÖRNING
@@ -83,3 +81,5 @@ LGs_info = pd.read_csv(LGs_info_path, sep="\t", header=0)
 LGs_info.apply(create_line_files, axis=1)
 
 
+
+# %%
