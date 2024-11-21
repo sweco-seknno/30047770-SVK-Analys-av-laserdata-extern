@@ -11,8 +11,6 @@ import pandas as pd
 import geopandas as gpd
 import fiona
 import copy
-#import arcpy
-#import gdalplugins
 from fiona import supported_drivers
 from geopandas.tools import sjoin
 from geopandas.tools import overlay
@@ -28,9 +26,9 @@ serv_prj_dir = r"Q:\Projekt\Analys_2024"
 # Path to the folder containing the RBX polygons.
 shp_dir = os.path.join(prj_dir, "RBX_polygons")
 # Path to the GeoDatabase.
-gdb = os.path.join(prj_dir, "veg_kantträd_241111.gdb")
+gdb = os.path.join(prj_dir, "veg_kantträd_test.gdb")
 # Path to the line list of which the main function is based on.
-LGs_info_path = r"Q:\Projekt\Data_2024\styrfiler\veg_kanttrad_241111.txt"
+LGs_info_path = r"Q:\Projekt\Data_2024\styrfiler\veg_kanttrad_test.txt"
 
 # %% FUNCTIONS
 # FUNCTIONS
@@ -55,6 +53,8 @@ def buffer_points(points):
     """
     buffer_geom = points.geometry.buffer(0.5, cap_style=1)
     buffered_points = gpd.GeoDataFrame(geometry=buffer_geom)
+    print(f"Buffrade punkter: {buffered_points.columns}")
+    
     return (buffered_points)
 
 
