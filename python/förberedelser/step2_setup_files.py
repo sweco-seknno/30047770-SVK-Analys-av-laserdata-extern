@@ -10,7 +10,7 @@ import pandas as pd
 import shutil
 
 #%% VARIABLER
-LGs_info = "Ledningar_2024_nya_makron_241112.txt"
+LGs_info = "Ledningar_2024_nya_makron_241209.txt"
 
 analysis_dir = Path(r"Q:\Projekt\Analys_2024")
 data_dir = Path(r"Q:\Projekt\Data_2024")
@@ -57,6 +57,7 @@ def copy_RBX_och_kantträd_macro(line_dir, spanning):
     src = macro_dir / f"RBX_och_kantträd_{spanning}_kV.mac"
     dest = line_dir / f"RBX_och_kantträd_{spanning}_kV.mac"
     copy_file(src, dest)
+    print(f"Kopierat RBX och kantträd till {line_dir}")
 
 def copy_DGN(dgn_dir, LG, line):
     src = dgn_dir / "MALL.dgn"
