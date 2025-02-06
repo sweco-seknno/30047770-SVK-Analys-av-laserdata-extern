@@ -4,14 +4,13 @@ Created on Mon Aug 16 16:16:11 2021
 
 @author: SEKNNO
 """
+# %% imports
 # imports
 import os
 import pandas as pd
 import geopandas as gpd
 import fiona
 import copy
-#import arcpy
-import gdalplugins
 from fiona import supported_drivers
 from geopandas.tools import sjoin
 from geopandas.tools import overlay
@@ -19,17 +18,20 @@ from shapely.geometry import Point
 from shapely.ops import unary_union
 import numpy
 
+# %% SET VARIABLES
 # SET VARIABLES
 # Path to the project folder.
-prj_dir = r"C:\SVK_2023\pythonkörningar\2020-12-20"
+prj_dir = r"C:\SVK_2024\pythonkörningar"
+serv_prj_dir = r"Q:\Projekt\Analys_2024"
 # Path to the folder containing the RBX polygons.
 shp_dir = os.path.join(prj_dir, "RBX_polygons")
 # Path to the GeoDatabase.
-gdb = os.path.join(prj_dir, "RBX_2023_12_20.gdb")
+gdb = os.path.join(prj_dir, "veg_kantträd_test.gdb")
 # Path to the line list of which the main function is based on.
-LGs_info_path = r"U:\Projekt\Data_2023\styrfiler\RBX_kantträd\2023-12-20.txt"
+LGs_info_path = r"Q:\Projekt\Data_2024\styrfiler\veg_kanttrad_test.txt"
 
-
+# %% FUNCTIONS
+# FUNCTIONS
 def create_dir(dir_path):
     """Creating directory
 
@@ -51,6 +53,8 @@ def buffer_points(points):
     """
     buffer_geom = points.geometry.buffer(0.5, cap_style=1)
     buffered_points = gpd.GeoDataFrame(geometry=buffer_geom)
+    print(f"Buffrade punkter: {buffered_points.columns}")
+    
     return (buffered_points)
 
 
@@ -157,7 +161,7 @@ def set_class(points, voltage, LG, littera, RBX_class, RBX_class_nr):
     RBX_class_points["KLASS_TEMP"] = RBX_class_nr
 
     # Returning the the full points list, where some points has been changed.
-    return (RBX_class_points.append(RBX_no_class_points))
+    return (RBX_class_points._append(RBX_no_class_points))
 
 
 def clip_polygons(clippee, clipper):
@@ -383,7 +387,7 @@ def RBX_polys_stats(row):
     # the raw RBX points from the txt file.
     # Needed because they have dZ attribute
     raw_RBX_file = os.path.join(
-        prj_dir, "ledningar", LG,
+        serv_prj_dir, "ledningar", LG,
         f"line_{line}", "RBX", str("RBX_raw.txt"))
 
     # Using "set_z_points" function to add z value to all points.
@@ -529,7 +533,8 @@ def RBX_polys_stats(row):
     points_out.to_file(os.path.join(
         shp_dir, f"{LG}_{line}_all_points.shp"), crs="epsg:3006")
 
-
+# %% RUN
+# RUN
 # In RBX_distances below, yellow distance is set to 0.1 m higher than in the macro.
 # arcpy NEAR_3D and TerraScan calculations can differ slightly, so that points
 # with a distance to wire < 4.0 m according to TerraScan are further than 4.0 m
@@ -559,3 +564,5 @@ LGs_info.apply(RBX_polys_stats, axis=1)
 header = ['LG', 'ledning', 'littera', 'gul', 'orange',
           'röd', 'antal gula', 'antal orange', 'antal röda']
 df_area_summary = pd.DataFrame(area_summary, columns=header)
+
+# %%
