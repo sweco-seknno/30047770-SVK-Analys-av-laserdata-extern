@@ -57,10 +57,7 @@ def create_SKB_XYZ(gdb, fc, fc_template, sr):
     # function to create fc_XYZ based on delivery template
     # only execute this if the fc does not already exist
     fc_full_path = os.path.join(gdb, fc)
-    if arcpy.Exists(fc_full_path):
-        print(fc+' already exists. Not created')
-    else:
-        arcpy.CreateFeatureclass_management(out_path=gdb, out_name=fc,
+    arcpy.CreateFeatureclass_management(out_path=gdb, out_name=fc,
                                             geometry_type='POINT', template=fc_template,
                                             has_z='SAME_AS_TEMPLATE', spatial_reference=sr)
 
